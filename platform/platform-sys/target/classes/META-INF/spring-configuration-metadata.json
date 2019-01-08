@@ -1,0 +1,40 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.ibona.modules.app.utils.JwtUtils",
+      "name": "platform.jwt",
+      "type": "cn.ibona.modules.app.utils.JwtUtils"
+    },
+    {
+      "sourceType": "cn.ibona.datasources.DynamicDataSourceConfig",
+      "name": "spring.datasource.druid.first",
+      "sourceMethod": "firstDataSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "cn.ibona.datasources.DynamicDataSourceConfig",
+      "name": "spring.datasource.druid.second",
+      "sourceMethod": "secondDataSource()",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.ibona.modules.app.utils.JwtUtils",
+      "defaultValue": 0,
+      "name": "platform.jwt.expire",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "cn.ibona.modules.app.utils.JwtUtils",
+      "name": "platform.jwt.header",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.ibona.modules.app.utils.JwtUtils",
+      "name": "platform.jwt.secret",
+      "type": "java.lang.String"
+    }
+  ]
+}

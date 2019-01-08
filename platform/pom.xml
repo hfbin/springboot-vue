@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.renren</groupId>
-    <artifactId>renren-platform</artifactId>
+    <groupId>cn.ibona</groupId>
+    <artifactId>bona-platform</artifactId>
     <version>3.2.0</version>
     <packaging>pom</packaging>
 
-    <name>renren-platform</name>
+    <name>bona-platform</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -15,8 +15,8 @@
 	</parent>
 
     <modules>
-        <module>renren-fast</module>
-        <module>renren-generator</module>
+        <module>platform-gen</module>
+        <module>platform-sys</module>
     </modules>
 
     <properties>
