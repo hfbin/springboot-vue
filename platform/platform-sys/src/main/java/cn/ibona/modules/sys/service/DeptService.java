@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author qiao
  * @email qiaogqiang@163.com
- * @date 2019-01-08 15:30:46
+ * @date 2019-01-08 16:09:30
  */
 public interface DeptService extends IService<DeptEntity> {
 
