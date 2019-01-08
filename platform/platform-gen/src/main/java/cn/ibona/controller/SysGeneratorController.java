@@ -19,7 +19,7 @@ import java.util.Map;
  * 代码生成器
  */
 @Controller
-@RequestMapping("/sys/generator")
+@RequestMapping("/gen/generator")
 public class SysGeneratorController {
 	@Autowired
 	private SysGeneratorService sysGeneratorService;

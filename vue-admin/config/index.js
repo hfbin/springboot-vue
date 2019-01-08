@@ -5,6 +5,8 @@
 const path = require('path')
 const devEnv = require('./dev.env')
 
+const apiBase = 'http://platform.qiaoguoqiang.cn'
+
 module.exports = {
   dev: {
 
@@ -13,11 +15,18 @@ module.exports = {
     assetsPublicPath: '/',
     // 代理列表, 是否开启代理通过[./dev.env.js]配置
     proxyTable: devEnv.OPEN_PROXY === false ? {} : {
-      '/api/': {
-        target: 'http://platform.qiaoguoqiang.cn/api/',
+      '/api/sys': {
+        target: apiBase + '/api/sys',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': ''
+          '^/api/sys': ''
+        }
+      },
+      '/api/gen': {
+        target: apiBase + '/api/gen',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/gen': ''
         }
       }
     },
