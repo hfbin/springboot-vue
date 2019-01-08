@@ -28,6 +28,13 @@ module.exports = {
         pathRewrite: {
           '^/api/gen': ''
         }
+      },
+      '/api/vc': {
+        target: apiBase + '/api/vc',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/vc': ''
+        }
       }
     },
 
